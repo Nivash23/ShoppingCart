@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Products from "./Products";
+import stars from "../src/assets/stars.jpg"
 import '../style/App.css'
 function Cards({ name, price, review, btn, count, setCount }) {
   const [addbtn,setAddbtn]=useState(true)
@@ -10,7 +11,7 @@ function Cards({ name, price, review, btn, count, setCount }) {
         <div class="card-body">
           <h5 id='Name' class="card-title">{name}</h5>
           {review?
-            (<img id='Review' src='../src/assets/stars.jpg' class="card-text"/>):null
+            (<img id='Review' src={stars} class="card-text"/>):null
             
         }
           <p id='Price' class="card-text">
