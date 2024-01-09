@@ -1,0 +1,77 @@
+#navigationbar{
+    display: flex;
+    padding: 3px 3px 3px 3px ;
+}
+#nav{
+    display: flex;
+    margin-left: 100px;
+}
+#nav div{
+    margin:20px 10px 0px 10px;
+}
+#drop{
+    margin:19px 0px 5px 20px ;
+}
+#list{
+    cursor: pointer;
+}
+#nav-1{
+    margin-left: 700px;
+    margin-top: 20px;
+}
+#Review{
+    width:70px;
+    height: 35px;
+}
+#hd{
+    font-size: larger;
+    font-weight: bold;
+}
+/* ul{
+} */
+
+li{
+    list-style: none;
+
+    margin: 5px 5px 5px 5px;
+}
+#cardcontainer{
+    margin-top: 100px;
+}
+#Button{
+ margin-top: 60px;   
+}
+#count{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin: 5px 5px 5px 5px ;
+    /* width:5px; */
+    padding: 0px 2px 0px 2px;
+}
+#image{
+    height: 200px;
+    width:100%;
+    background-color:whitesmoke;
+}
+#card{
+    width:300px;
+    margin:20px 20px 20px 20px;
+    height: 400px;
+}
+i{
+    margin:5px 5px 5px 5px ;
+}
+
+button{
+    padding: 5px 5px 5px 5px;
+}
+#title{
+    height:200px;
+    width:100%;
+    display: flex;
+    background-color:rgb(40, 38, 38);
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
