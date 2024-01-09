@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Products from "./Products";
 import '../style/App.css'
-function Cards({ name, price, review ,btn,count,setCount}) {
+function Cards({ name, price, review, btn, count, setCount }) {
+  const [addbtn,setAddbtn]=useState(true)
   return (
     <div id='cardcontainer'>
       <div class="card text-center" id='card'>
@@ -18,9 +19,11 @@ function Cards({ name, price, review ,btn,count,setCount}) {
           {btn?
           (<a id='Button'  href="#" class="btn btn-secondary">
             View Options
-          </a>):(<a id='Button' href="#" class="btn btn-secondary" onClick={()=>{setCount(count+1)}}>
+          </a>):(addbtn?  (<a id='Button' href="#" class="btn btn-secondary" onClick={()=>{setCount(count+1),setAddbtn(false)}}>
             Add to cart
-          </a>)
+          </a>):(<a id='Button' href="#" class="btn btn-secondary" onClick={()=>{setCount(count-1),setAddbtn(true)}}>
+            Remove
+          </a>)) 
 
           }
         </div>
